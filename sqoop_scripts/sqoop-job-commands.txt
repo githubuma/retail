@@ -11,6 +11,7 @@ sqoop-job --create loadsalesorderheader -- import  --connect jdbc:mysql://quicks
 --target-dir /user/cloudera/bigretail/output/stores/sqoop/salesorderheader  \
 --split-by SalesOrderID --num-mappers 1 --check-column SalesOrderID --incremental append \
 --password-file /user/cloudera/bigretail/passwordfile
+# add comment
 
 
 # sqoop script to create a new job to load salesorderdetails data from rdbms to hdfs
